@@ -1,0 +1,100 @@
+{
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "vs-seti",
+  "editor.fontSize": 20,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "500",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsons]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "lf",
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "none",
+  "oneDarkPro.italic": false,
+  "oneDarkPro.editorTheme": "oneDarkPro",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.automationShell.linux": "zsh",
+  // Tailwind CSS
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.autoSave": "off",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#fff",
+    "editorCursor.background": "#222",
+    "terminalCursor.foreground": "#fff"
+  },
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontSize": 17,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-b>": false,
+    "<C-w>": false,
+    "<C-q>": false
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "color-highlight.markerType": "dot-before",
+  "workbench.colorTheme": "One Dark Pro"
+  /*   // Autocomplete off
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  //   "editor.hover.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": false,
+  "editor.quickSuggestionsDelay": 10,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": false,
+  "workbench.tree.indent": 16,
+  "html.format.enable": false,
+  "typescript.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "html.autoClosingTags": false, */
+}
