@@ -1,0 +1,8 @@
+# Status Bar
+dwmblocks &
+
+# Compositor
+picom -b
+
+# Random Photo Every Login
+feh --bg-fill --randomize ~/Pictures/wallpapers/* &
