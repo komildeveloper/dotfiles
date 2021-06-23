@@ -1,7 +1,7 @@
 {
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 20,
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
@@ -53,11 +53,7 @@
   },
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.fontSize": 17,
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
+  // VIM
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -81,7 +77,8 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "color-highlight.markerType": "dot-before",
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.untitled.hint": "hidden"
   /*   // Autocomplete off
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.acceptSuggestionOnEnter": "off",
