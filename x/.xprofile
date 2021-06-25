@@ -1,5 +1,6 @@
 # Status Bar
-dwmblocks &
+#dwmblocks &
+slstatus &
 
 # Compositor
 picom -b
