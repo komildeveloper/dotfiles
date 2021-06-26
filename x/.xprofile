@@ -7,3 +7,9 @@ picom -b
 
 # Random Photo Every Login
 feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+
+# Hide mouse when typing
+xbanish &
+
+# load Xresources
+#xrdb ~/.Xresources
