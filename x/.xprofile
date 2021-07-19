@@ -8,8 +8,21 @@ picom -b
 # Random Photo Every Login
 feh --bg-fill --randomize ~/Pictures/wallpapers/* &
 
+# Environment variables set everywhere
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="brave"
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
 # Hide mouse when typing
 xbanish &
 
 # load Xresources
-#xrdb ~/.Xresources
+xrdb ~/.Xresources
+
+# zsh config dir
+export ZDOTDIR=$HOME/.config/zsh
