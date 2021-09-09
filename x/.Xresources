@@ -3,13 +3,13 @@ xterm*disallowedWindowOps: 20,21,SetXProp
 *.font:	Monospace:pixelsize=21:antialias=true:autohint=true;
 *.fontalt0:Braille:pixelsize=20:antialias=true:autohint=true;
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
-*.alpha: 0.95
+*.alpha: 0.90
 
 ! colors
 
 ! special
 *.foreground:   #B8BEC9
-*.background:   #1e1e1e
+*.background:   #1F2227
 *.cursorColor:  #ECEFF4
 *.revCursorColor:  #555555
 
