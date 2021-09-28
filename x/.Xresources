@@ -1,46 +1,29 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
-*.font:	Monospace:pixelsize=21:antialias=true:autohint=true;
+st.font:Hack Nerd Font Mono:style:medium:pixelsize=21
 *.fontalt0:Braille:pixelsize=20:antialias=true:autohint=true;
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
 *.alpha: 0.90
 
 ! colors
 
-! special
-*.foreground:   #B8BEC9
-*.background:   #1F2227
-*.cursorColor:  #ECEFF4
-*.revCursorColor:  #555555
+*background: #24283b
+*foreground: #c0caf5
 
-! black
-*.color0:       #4C566A
-*.color8:       #6C768A
+*color0: #1D202F
+*color1: #f7768e
+*color2: #9ece6a
+*color3: #e0af68
+*color4: #7aa2f7
+*color5: #bb9af7
+*color6: #7dcfff
+*color7: #a9b1d6
 
-! red
-*.color1:       #BF616A
-*.color9:       #af7370
-
-! green
-*.color2:       #A3BE8C
-*.color10:      #B5CEA8
-
-! yellow
-*.color3:       #D7BA7D
-*.color11:      #E7cb93
-
-! blue
-*.color4:       #5e81ac
-*.color12:      #69A8C6
-
-! magenta
-*.color5:       #B48EAD
-*.color13:      #939ede
-
-! cyan
-*.color6:       #88c0d0
-*.color14:      #69BAC8
-
-! white
-*.color7:       #ABB2BF
-*.color15:      #D8DEE9
+*color8: #414868
+*color9: #f7768e
+*color10: #9ece6a
+*color11: #e0af68
+*color12: #7aa2f7
+*color13: #bb9af7
+*color14: #7dcfff
+*color15: #c0caf5
