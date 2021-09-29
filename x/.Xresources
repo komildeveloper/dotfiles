@@ -1,6 +1,7 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
-st.font:Hack Nerd Font Mono:style:medium:pixelsize=21
+st.font:JetBrainsMono Nerd Font:style:medium:pixelsize=21
+/* st.font:Hack Nerd Font Mono:style:medium:pixelsize=21 */
 *.fontalt0:Braille:pixelsize=20:antialias=true:autohint=true;
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
 *.alpha: 0.90
