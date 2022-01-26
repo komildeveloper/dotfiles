@@ -10,12 +10,27 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/.local/share/go/bin:$PATH
 export GOPATH=$HOME/.local/share/go
 export PATH=/home/chris/.fnm:$PATH
+
 eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 
 # fnm
 export PATH=/home/komil/.fnm:$PATH
 eval "$(fnm env)"
+
+# autin
+export ATUIN_NOBIND="true"
+eval "$(atuin init zsh)"
+
+bindkey '^r' _atuin_search_widget
+
+# depends on terminal mode
+bindkey '^[[A' _atuin_search_widget
+bindkey '^[OA' _atuin_search_widget
+bindkey '^[[Z' reverse-menu-complete
+
+# starship
+eval "$(starship init zsh)"
 
 # fuck
 eval $(thefuck --alias)
