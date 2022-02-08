@@ -1,19 +1,15 @@
 {
-  "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 20,
-  "editor.fontFamily": "'Fira Code'",
+  "editor.fontSize": 22,
+  "editor.fontFamily": "'FiraCode Nerd Font'",
   "editor.fontLigatures": true,
   "editor.fontWeight": "500",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "workbench.productIconTheme": "fluent-icons",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -52,46 +48,106 @@
     "terminalCursor.foreground": "#fff"
   },
   "terminal.integrated.cursorWidth": 2,
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontSize": 20,
   // VIM
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    },
-    {
-      "before": ["k", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["j", "j"],
+  //     "after": ["<Esc>"]
+  //   },
+  //   {
+  //     "before": ["k", "k"],
+  //     "after": ["<Esc>"]
+  //   }
+  // ],
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
     "<C-b>": false,
     "<C-w>": false,
-    "<C-q>": false
+    "<C-k>": false
   },
+
   "liveServer.settings.donotShowInfoMsg": true,
   "go.toolsManagement.autoUpdate": true,
   "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
   "git.confirmSync": false,
   "git.autofetch": true,
-  "color-highlight.markerType": "dot-before",
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.editor.untitled.hint": "hidden"
-  /*   // Autocomplete off
+  // "color-highlight.markerType": "dot-before",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.untitled.hint": "hidden",
+  "editor.inlineSuggest.enabled": true,
+  "files.associations": {
+    "*.md": "mdx"
+  },
+  // Autocomplete off
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.acceptSuggestionOnEnter": "off",
-  //   "editor.hover.enabled": false,
-  "editor.parameterHints.enabled": false,
+
+  // TURN OFF AUTOCOMPLETION
+  // Controls if quick suggestions should show up or not while typing
   "editor.quickSuggestions": false,
-  "editor.quickSuggestionsDelay": 10,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // Controls the delay in ms after which quick suggestions will show up
+  "editor.quickSuggestionsDelay": 90,
+
+  // Enables parameter hints
+  "editor.parameterHints": false,
+
+  // Controls if the editor should automatically close brackets after opening them
+  "editor.autoClosingBrackets": false,
+
+  // Controls if the editor should automatically format the line after typing
+  "editor.formatOnType": false,
+
+  // Controls if suggestions should automatically show up when typing trigger characters
   "editor.suggestOnTriggerCharacters": false,
-  "editor.wordBasedSuggestions": false,
-  "workbench.tree.indent": 16,
-  "html.format.enable": false,
-  "typescript.autoClosingTags": false,
-  "javascript.autoClosingTags": false,
-  "html.autoClosingTags": false, */
+
+  // Controls if suggestions should be accepted 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions.
+  "editor.acceptSuggestionOnEnter": "off",
+
+  // "editor.acceptSuggestionOnEnter": "off",
+  // // "editor.hover.enabled": false,
+  // "editor.parameterHints.enabled": false,
+  // "editor.quickSuggestionsDelay": 10,
+  // "editor.suggest.snippetsPreventQuickSuggestions": false,
+  // "editor.suggestOnTriggerCharacters": false,
+  // "editor.wordBasedSuggestions": false,
+  // "workbench.tree.indent": 16,
+  // "html.format.enable": false,
+  // "typescript.autoClosingTags": false,
+  // "javascript.autoClosingTags": false,
+  // "html.autoClosingTags": false,
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "explorer.confirmDragAndDrop": false,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "window.menuBarVisibility": "toggle",
+  "terminal.integrated.localEchoExcludePrograms": [
+    "vim",
+    "vi",
+    "nano",
+    "tmux",
+    "nvim",
+    "lvim"
+  ],
+  "liveServer.settings.donotVerifyTags": true,
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "editor.formatOnSave": true,
+  "gruvboxMaterial.darkContrast": "hard",
+  "gruvboxMaterial.darkWorkbench": "flat",
+  "redhat.telemetry.enabled": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.linux": "/home/komil/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path.linux": "/home/komil/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.linux": "/home/komil/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.linkedEditing": true
+  // "workbench.activityBar.visible": true
 }
