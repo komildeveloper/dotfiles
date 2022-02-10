@@ -1,3 +1,7 @@
+call plug#begin("~/.config/nvim/plugged")
+Plug 'github/copilot.vim'
+call plug#end() 
+
 syntax enable
 set number " show line numbers
 set wrap
@@ -7,10 +11,12 @@ set tabstop=2
 set softtabstop=2   " number of spaces in tab when editing
 set shiftwidth=2    " number of spaces to use for autoindent
 set expandtab
+set undodir=~/.nvim/undodir          " set a undodir
+set formatoptions-=ro
 " set termguicolors
 " set cursorline
 " set ruler
-set showtabline=2
+" set showtabline=2
 
 set guicursor=i:block
 
@@ -20,7 +26,7 @@ colorscheme peachpuff
 "
 " Reference chart of values:
 "   Ps = 0  -> blinking block.
-"   Ps = 1  -> blinking block (default).
+"   Ps  1  -> blinking block (default).
 "   Ps = 2  -> steady block.
 "   Ps = 3  -> blinking underline.
 "   Ps = 4  -> steady underline.
@@ -40,3 +46,8 @@ else
     let &t_EI.="\<Esc>[1 q"
     let &t_te.="\<Esc>[1 q"
 endif
+
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal formatoptions-=ro
+augroup END
