@@ -29,4 +29,4 @@ zstyle ':fzf-tab:complete:git-checkout:*' fzf-preview \
 	*) git log --color=always $word ;;
 	esac'
 
-export LESSOPEN='|~/.lessfilter %s'
+export LESSOPEN='|~/config/zsh/.lessfilter %s'
