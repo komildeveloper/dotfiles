@@ -56,17 +56,17 @@ alias s="git checkout stable"
 
 alias tock="tty-clock"
 
-alias "exa --sort Name --long --icons --all"
+alias ls='exa -al --icons --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --icons --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --icons --color=always --group-directories-first'  # long format
+alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."'
 
 case "$(uname -s)" in
 
 Darwin)
 	# echo 'Mac OS X'
 	alias ls='ls -G'
-	;;
-
-Linux)
-	alias ls='ls --color=auto'
 	;;
 
 CYGWIN* | MINGW32* | MSYS* | MINGW*)
