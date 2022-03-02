@@ -8,9 +8,9 @@ picom -b
 feh --bg-fill --randomize ~/Pictures/wallpapers/* &
 
 # Environment variables set everywhere
-#export EDITOR="nvim"
-export EDITOR="lvim"
-export TERMINAL="st"
+#export EDITOR="vim"
+export EDITOR="nvim"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 
 # XDG Paths
