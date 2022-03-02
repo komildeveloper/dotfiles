@@ -1,5 +1,8 @@
 call plug#begin("~/.config/nvim/plugged")
 Plug 'github/copilot.vim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'neovim/nvim-lspconfig'
+Plug 'sainnhe/gruvbox-material'
 call plug#end() 
 
 syntax enable
@@ -20,7 +23,13 @@ set formatoptions-=ro
 
 set guicursor=i:block
 
-colorscheme peachpuff
+set background=dark
+let g:gruvbox_material_background = 'hard'
+let g:gruvbox_material_palette = 'material'
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 1
+
+colorscheme gruvbox-material
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
