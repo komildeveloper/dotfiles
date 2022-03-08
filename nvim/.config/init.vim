@@ -1,8 +1,7 @@
 call plug#begin("~/.config/nvim/plugged")
 Plug 'github/copilot.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'neovim/nvim-lspconfig'
-Plug 'sainnhe/gruvbox-material'
+Plug 'rebelot/kanagawa.nvim'
 call plug#end() 
 
 syntax enable
@@ -16,20 +15,15 @@ set shiftwidth=2    " number of spaces to use for autoindent
 set expandtab
 set undodir=~/.nvim/undodir          " set a undodir
 set formatoptions-=ro
-" set termguicolors
-" set cursorline
-" set ruler
+set termguicolors
+set cursorline
+set ruler
 " set showtabline=2
-
+set formatoptions-=cro
 set guicursor=i:block
 
 set background=dark
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_palette = 'material'
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_disable_italic_comment = 1
-
-colorscheme gruvbox-material
+colorscheme kanagawa
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
@@ -56,7 +50,21 @@ else
     let &t_te.="\<Esc>[1 q"
 endif
 
-augroup filetype_vim
-    autocmd!
-    autocmd FileType vim setlocal formatoptions-=ro
-augroup END
+" augroup filetype_vim
+"    autocmd!
+"    autocmd FileType vim setlocal formatoptions-=ro
+" augroup END
+
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+lua << EOF
+  require'nvim-treesitter.configs'.setup {
+    -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+    ensure_installed = "all",
+
+    highlight = {
+      -- `false` will disable the whole extension
+      enable = true,
+    },
+  }
+EOF
