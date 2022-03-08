@@ -1,15 +1,34 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
+
+call plug#end()
+
 set number
 syntax enable
-colorscheme peachpuff
+
+set background=dark
+colorscheme default
+
+let g:gruvbox_material_enable_italic = 1
+let g:gruvbox_material_disable_italic_comment = 1
+
+let &t_ut=''
 
 set wrap
+set mouse+=a
 set encoding+="UTF-8"
-set clipboard+="unnamedplus"
+set clipboard+=unnamedplus
 set tabstop=2
 set softtabstop=2   " number of spaces in tab when editing
 set shiftwidth=2    " number of spaces to use for autoindent
 set expandtab
-set showtabline=2
+" set showtabline=2
+set splitbelow
+set splitright
+set ai
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
