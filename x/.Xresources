@@ -1,17 +1,17 @@
 xterm*selectToClipboard: true
 xterm*disallowedWindowOps: 20,21,SetXProp
-st.font:JetBrainsMono Nerd Font:style:medium:pixelsize=21
+st.font:JetBrainsMono Nerd Font:style:medium:pixelsize=19
 /* st.font:Hack Nerd Font Mono:style:medium:pixelsize=21 */
-*.fontalt0:Braille:pixelsize=20:antialias=true:autohint=true;
+*.fontalt0:Braille:pixelsize=18:antialias=true:autohint=true;
 /* *.fontalt1:JoyPixels:pixelsize=24:antialias=true:autohint=true; */
-*.alpha: 0.90
+*.alpha: 0.95
 
 ! colors
 
 ! special
-*.foreground:      #B8BEC9
-*.background:      #1F2227
-*.cursorColor:     #ECEFF4
+*.foreground:   #B8BEC9
+*.background:   #232731
+*.cursorColor:  #ECEFF4
 *.revCursorColor:  #555555
 
 ! black
@@ -38,7 +38,7 @@ st.font:JetBrainsMono Nerd Font:style:medium:pixelsize=21
 *.color5:       #B48EAD
 *.color13:      #939ede
 
-! cyan
+! cya
 *.color6:       #88c0d0
 *.color14:      #69BAC8
 
