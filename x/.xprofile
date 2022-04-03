@@ -7,10 +7,17 @@ picom -b
 # Random Photo Every Login
 feh --bg-fill --randomize ~/Pictures/wallpapers/* &
 
+# Don't Randomly Turn off
+xset s off
+xset -dpms
+xset s noblank
+
+# Speedy keys
+xset r rate 210 40
+
 # Environment variables set everywhere
-#export EDITOR="vim"
-export EDITOR="nvim"
-export TERMINAL="alacritty"
+export EDITOR="vim"
+export TERMINAL="kitty"
 export BROWSER="brave"
 
 # XDG Paths
@@ -20,6 +27,15 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 # Hide mouse when typing
 xbanish &
+
+# Screenshots
+# flameshot &
+
+# Bluetooth systray icon
+# blueman-applet &
+
+# helps with puls audio
+# pasystray &
 
 # load Xresources
 xrdb ~/.Xresources
