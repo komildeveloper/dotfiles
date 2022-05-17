@@ -15,8 +15,8 @@ eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 
 # fnm
-export PATH=/home/komil/.fnm:$PATH
-eval "$(fnm env)"
+# export PATH=/home/komil/.fnm:$PATH
+# eval "$(fnm env)"
 
 # autin
 export ATUIN_NOBIND="true"
