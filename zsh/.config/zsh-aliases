@@ -55,6 +55,7 @@ alias m="git checkout master"
 alias s="git checkout stable"
 
 alias tock="tty-clock -c -s"
+alias k="kubectl"
 
 alias ls='exa -al --icons --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --icons --color=always --group-directories-first'  # all files and dirs
