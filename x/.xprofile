@@ -1,5 +1,5 @@
 # Status Bar
-dwmblocks &
+dwmbar &
 
 # Compositor
 picom -b
@@ -13,10 +13,10 @@ xset -dpms
 xset s noblank
 
 # Speedy keys
-xset r rate 210 40
+xset r rate 210 30
 
 # Environment variables set everywhere
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="brave"
 
