@@ -2,10 +2,17 @@ env:
   TERM: xterm-256color
   
 # Note I am using alacritty-ligatures until ligatures make it upstream
+window:
+  padding:
+    x: 0
+    y: 0
+  dynamic_padding: true
+
 colors:
   # Default colors
   primary:
-    background: "#1E1E1E"
+    # background: "#1E1E1E"
+    background: "#1C1C1C"
     foreground: "#ABB2BF"
 
   # Normal colors
@@ -41,19 +48,19 @@ cursor:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: JetBrains Mono Nerd Font Mono
+    family: Comic Mono
     # Style can be specified to pick a specific face.
     style: Regular
 
   # The bold font face
   bold:
-    family: JetBrains Mono Nerd Font Mono 
+    family: Comic Mono
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: JetBrains Mono Nerd Font Mono 
+    family: Comic Mono
     # Style can be specified to pick a specific face.
     style: Italic
 
@@ -67,10 +74,7 @@ font:
   glyph_offset:
     x: 0
     y: 0
-window:
-  padding:
-    x: 2
-    y: 2
+
   # scrolling:
   #   # Maximum number of lines in the scrollback buffer.
   #   # Specifying '0' will disable scrolling.
@@ -89,6 +93,8 @@ window:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
+shell:
+  program: /bin/bash
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }
