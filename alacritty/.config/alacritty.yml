@@ -16,14 +16,14 @@ colors:
 
   # Normal colors
   normal:
-    black: "#222222"
+    black: "#171717"
     red: "#F33535"
     green: "#66DE93"
     yellow: "#4AA96C"
     blue: "#488FB1"
     magenta: "#B48EAD"
-    cyan: "#383838"
-    white: "#abb2bf"
+    cyan: "#F6F5F5"
+    white: "#3A3535"
 
   # Bright colors
   bright:
