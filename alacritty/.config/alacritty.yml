@@ -11,19 +11,18 @@ window:
 colors:
   # Default colors
   primary:
-    # background: "#1E1E1E"
     background: "#1C1C1C"
     foreground: "#ABB2BF"
 
   # Normal colors
   normal:
-    black: "#4C566A"
-    red: "#bf616a"
-    green: "#A3BE8C"
-    yellow: "#D7BA7D"
-    blue: "#5e81ac"
+    black: "#222222"
+    red: "#F33535"
+    green: "#66DE93"
+    yellow: "#4AA96C"
+    blue: "#488FB1"
     magenta: "#B48EAD"
-    cyan: "#88c0d0"
+    cyan: "#383838"
     white: "#abb2bf"
 
   # Bright colors
@@ -31,15 +30,15 @@ colors:
     black: "#4C566A"
     red: "#bf616a"
     green: "#A3BE8C"
-    yellow: "#D7BA7D"
+    yellow: "#4AA96C"
     blue: "#5e81ac"
     magenta: "#B48EAD"
     cyan: "#88c0d0"
     white: "#abb2bf"
 
   cursor:
-    text: "#3B4252"
-    cursor: "#ECEFF4"
+    text: "#171717"
+    cursor: "#C8C6C6"
 
 cursor:
   style:
@@ -64,7 +63,7 @@ font:
     # Style can be specified to pick a specific face.
     style: Italic
 
-  size: 14.0
+  size: 13.0
 
   ligatures: true
 
