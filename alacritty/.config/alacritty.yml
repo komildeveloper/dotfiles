@@ -17,11 +17,11 @@ colors:
   # Normal colors
   normal:
     black: "#171717"
-    red: "#F33535"
-    green: "#66DE93"
-    yellow: "#4AA96C"
-    blue: "#488FB1"
-    magenta: "#B48EAD"
+    red: "#DD5353"
+    green: "#6BCB77"
+    yellow: "#FFD93D"
+    blue: "#5CB8E4"
+    magenta: "#A460ED"
     cyan: "#F6F5F5"
     white: "#3A3535"
 
@@ -47,21 +47,10 @@ cursor:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Comic Mono
-    # Style can be specified to pick a specific face.
-    style: Regular
-
-  # The bold font face
-  bold:
-    family: Comic Mono
-    # Style can be specified to pick a specific face.
+    family: DejaVuSansMono
     style: Bold
-
-  # The italic font face
-  italic:
-    family: Comic Mono
-    # Style can be specified to pick a specific face.
-    style: Italic
+    bold_style: Bold
+    italic_style: Italic
 
   size: 13.0
 
