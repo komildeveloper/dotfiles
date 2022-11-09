@@ -2,7 +2,7 @@
 # ~/.bashrc
 #
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && retur9
+[[ $- != *i* ]] && return
 
 # # export PS1="[\u@\h] > \W \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/') \n\\$ \[$(tput sgr0)\]"
 # alias ls='ls --color'
