@@ -5,7 +5,7 @@ dwmbar &
 picom -b
 
 # Random Photo Every Login
-feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+feh --bg-fill --randomize ~/Pictures/wallpapers/tokyonight/* &
 
 # Don't Randomly Turn off
 xset s off
@@ -16,8 +16,8 @@ xset s noblank
 xset r rate 210 30
 
 # Environment variables set everywhere
-export EDITOR="nvim"
-export TERMINAL="kitty"
+export EDITOR="vim"
+export TERMINAL="alacritty"
 export BROWSER="brave"
 
 # XDG Paths
@@ -34,7 +34,7 @@ xbanish &
 # Bluetooth systray icon
 # blueman-applet &
 
-# helps with puls audio
+# helps with pulse audio
 # pasystray &
 
 # load Xresources
