@@ -1,17 +1,36 @@
 env:
   TERM: xterm-256color
   
+dpi: 
+  x: 144.0
+  y: 144.0
+
 # Note I am using alacritty-ligatures until ligatures make it upstream
 window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  dimensions:
+    columns: 0
+    lines: 0
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 4
+    y: 2
+
+  # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
 
 colors:
   # Default colors
   primary:
-    background: "#1C1C1C"
+    # background: "#1C1C1C"
+    background: "#1E1E1E"
     foreground: "#ABB2BF"
 
   # Normal colors
@@ -48,11 +67,15 @@ font:
   # The normal (roman) font face to use.
   normal:
     family: DejaVuSansMono
-    style: Bold
+    style: Regular
     bold_style: Bold
     italic_style: Italic
 
-  size: 13.0
+  offset:
+    x: 7.0
+    y: -4.0
+
+  size: 12.0
 
   ligatures: true
 
