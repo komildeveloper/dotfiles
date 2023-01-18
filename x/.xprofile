@@ -16,8 +16,8 @@ xset s noblank
 xset r rate 210 30
 
 # Environment variables set everywhere
-export EDITOR="vim"
-export TERMINAL="alacritty"
+export EDITOR="lvim"
+export TERMINAL="kitty"
 export BROWSER="brave"
 
 # XDG Paths
