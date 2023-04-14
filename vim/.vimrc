@@ -14,19 +14,25 @@ Plug 'tpope/vim-unimpaired'
 
 Plug 'mattn/emmet-vim'
 Plug 'morhetz/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-" Plug 'tomasiser/vim-code-dark'
+" Plug 'sainnhe/gruvbox-material'
+Plug 'tomasiser/vim-code-dark'
 Plug 'sheerun/vim-polyglot'
 
 Plug 'psliwka/vim-smoothie'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'preservim/nerdtree'
+Plug 'mbbill/undotree'
 
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+Plug 'chr4/nginx.vim'
 
 call plug#end()
 
@@ -34,17 +40,20 @@ let mapleader = ' '
 
 syntax on
 filetype indent plugin on
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set expandtab
 set ai
+set autoindent
+set smartindent
 set number
 set hlsearch
 set ruler
-se wrap
-" highlight Comment ctermfg=green
+set wrap
+set go+=a
+highlight Comment ctermfg=green
 
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set whichwrap+=<,>,[,],h,l
@@ -62,15 +71,18 @@ set wildmenu
 set undodir=.undo/,~/.undo/,/tmp//
 set undofile
 set cursorline
+set paste
 if has('termguicolors')
   set termguicolors
 endif
 set background=dark
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_foreground = 'material'
-colorscheme gruvbox-material
+" let g:gruvbox_material_background = 'hard'
+" let g:gruvbox_material_foreground = 'material'
+" colorscheme gruvbox-material
+colorscheme codedark
 
-let g:airline_theme = 'gruvbox_material'
+" let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'codedark'
 
 nmap <silent> <S-L> :bnext<CR>
 nmap <silent> <S-H> :bprevious<CR>
@@ -139,9 +151,25 @@ endif
 nnoremap <silent> <C-t> :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :NERDTreeFind<CR>
 
-let g:airline_powerline_fonts = 1
-
 let NERDTreeShowHidden=1
+
+" Undotree
+nnoremap <F5> :UndotreeToggle<CR>
+
+if has("persistent_undo")
+   let target_path = expand('~/.undodir')
+
+   " create the directory and any parent directories
+   " if the location does not exist.
+   if !isdirectory(target_path)
+     call mkdir(target_path, "p", 0700)
+   endif
+
+   let &undodir=target_path
+   set undofile
+endif
+
+let g:airline_powerline_fonts = 1
 
 let g:user_emmet_mode='a'    "enable all function in all mode.
 
