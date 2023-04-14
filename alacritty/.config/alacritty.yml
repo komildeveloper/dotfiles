@@ -26,56 +26,150 @@ window:
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
 
+# The definition of color schemes.
+# colors:
+  # 0x Default colors
+  # primary:
+    # background: '0x300a24'
+      # foreground: '0xeeeeec'
+
+  # 0x Normal colors
+  # normal:
+    # black:   '0x2e3436'
+    # red:     '0xcc0000'
+    # green:   '0x4e9a06'
+    # yellow:  '0xc4a000'
+    # blue:    '0x3465a4'
+    # magenta: '0x75507b'
+    # cyan:    '0x06989a'
+    # white:   '0xd3d7cf'
+
+  # 0x Bright colors
+  # bright:
+    # black:   '0x555753'
+    # red:     '0xef2929'
+    # green:   '0x8ae234'
+    # yellow:  '0xfce94f'
+    # blue:    '0x729fcf'
+    # magenta: '0xad7fa8'
+    # cyan:    '0x34e2e2'
+    # white:   '0xeeeeec'
+
+# Colors (Tomorrow Night)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#333333'
+#     foreground: '#F2F2F2'
+#  
+#  # Normal colors
+#   normal:
+#     black:   '#263640'
+#     red:     '#d12f2c'
+#     green:   '#819400'
+#     yellow:  '#b08500'
+#     blue:    '#2587cc'
+#     magenta: '#696ebf'
+#     cyan:    '#289c93'
+#     white:   '#bfbaac'
+#  
+#   # Bright colors
+#   bright:
+#     black:   '#4a697d'
+#     red:     '#fa3935'
+#     green:   '#a4bd00'
+#     yellow:  '#d9a400'
+#     blue:    '#2ca2f5'
+#     magenta: '#8086e8'
+#     cyan:    '#33c5ba'
+#     white:   '#fdf6e3'
+
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x1d1f21'
+#     foreground: '0xc5c8c6'
+#
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0x1d1f21'
+#     cursor: '0xc5c8c6'
+#
+#   # Normal colors
+#   normal:
+#     black:   '0x1d1f21'
+#     red:     '0xcc6666'
+#     green:   '0xb5bd68'
+#     yellow:  '0xf0c674'
+#     blue:    '0x81a2be'
+#     magenta: '0xb294bb'
+#     cyan:    '0x8abeb7'
+#     white:   '0xc5c8c6'
+#
+#   # Bright colors
+#   bright:
+#     black:   '0x969896'
+#     red:     '0xcc6666'
+#     green:   '0xb5bd68'
+#     yellow:  '0xf0c674'
+#     blue:    '0x81a2be'
+#     magenta: '0xb294bb'
+#     cyan:    '0x8abeb7'
+#     white:   '0xffffff'
+#
+#   indexed_colors:
+#     - { index: 16, color: '0xde935f' }
+#     - { index: 17, color: '0xa3685a' }
+#     - { index: 18, color: '0x282a2e' }
+#     - { index: 19, color: '0x373b41' }
+#     - { index: 20, color: '0xb4b7b4' }
+#     - { index: 21, color: '0xe0e0e0' }
+
 colors:
-  # Default colors
   primary:
-    # background: "#1C1C1C"
     background: "#1E1E1E"
-    foreground: "#ABB2BF"
-
-  # Normal colors
-  normal:
-    black: "#171717"
-    red: "#DD5353"
-    green: "#6BCB77"
-    yellow: "#FFD93D"
-    blue: "#5CB8E4"
-    magenta: "#A460ED"
-    cyan: "#F6F5F5"
-    white: "#3A3535"
-
-  # Bright colors
-  bright:
-    black: "#4C566A"
-    red: "#bf616a"
-    green: "#A3BE8C"
-    yellow: "#4AA96C"
-    blue: "#5e81ac"
-    magenta: "#B48EAD"
-    cyan: "#88c0d0"
-    white: "#abb2bf"
-
+    foreground: "#D4D4D4"
   cursor:
-    text: "#171717"
-    cursor: "#C8C6C6"
+    text: "#1d1f21"
+    cursor: "#cccccc"
+  normal:
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"
+  bright:
+    black: "#666666"
+    red: "#f14c4c"
+    green: "#23d18b"
+    yellow: "#f5f543"
+    blue: "#3b8eea"
+    magenta: "#d670d6"
+    cyan: "#29b8db"
+    white: "#e5e5e5"
 
 cursor:
   style:
+    shape: Block
     blinking: Never
 
 font:
   # The normal (roman) font face to use.
   normal:
-    family: DejaVuSansMono
-    style: Regular
-    bold_style: Bold
-    italic_style: Italic
+    # family: Jetbrains Mono Nerd Font Mono
+    family: Fira Code
+    # style: Regular
+    # bold_style: Bold
+    # italic_style: Italic
 
   offset:
     x: 7.0
     y: -4.0
 
-  size: 12.0
+  size: 13.0
 
   ligatures: true
 
