@@ -83,7 +83,7 @@ function centos_fedora_install() {
     program_exists "zsh" || sudo dnf install -y zoxide
 
     echo "Installing Node.js"
-    sudo dnf module install nodejs:18/common
+    sudo dnf module install -y nodejs:18/common
 }
 
 function install_awesome_tools() {
