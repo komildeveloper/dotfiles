@@ -160,10 +160,10 @@ font:
   # The normal (roman) font face to use.
   normal:
     # family: Jetbrains Mono Nerd Font Mono
-    family: Fira Code
-    # style: Regular
-    # bold_style: Bold
-    # italic_style: Italic
+    family: FiraCode Nerd Font Mono
+    style: Regular
+    bold_style: Bold
+    italic_style: Italic
 
   offset:
     x: 7.0
