@@ -40,12 +40,6 @@ let mapleader = ' '
 
 syntax on
 filetype indent plugin on
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set ai
-set autoindent
-set smartindent
 set number
 set hlsearch
 set ruler
@@ -53,9 +47,12 @@ set wrap
 set go+=a
 highlight Comment ctermfg=green
 
+set shiftwidth=2
+set smarttab
+set tabstop=2
+
 set clipboard=unnamedplus
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set whichwrap+=<,>,[,],h,l
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
@@ -72,6 +69,7 @@ set undodir=.undo/,~/.undo/,/tmp//
 set undofile
 set cursorline
 set paste
+set timeoutlen=100
 if has('termguicolors')
   set termguicolors
 endif
@@ -83,6 +81,14 @@ colorscheme codedark
 
 " let g:airline_theme = 'gruvbox_material'
 let g:airline_theme = 'codedark'
+
+nnoremap <silent> <Leader>h :noh<CR>
+nnoremap <silent> <Backspace> :noh<CR>
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 nmap <silent> <S-L> :bnext<CR>
 nmap <silent> <S-H> :bprevious<CR>
