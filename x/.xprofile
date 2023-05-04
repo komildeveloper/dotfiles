@@ -5,7 +5,8 @@ dwmbar &
 picom -b
 
 # Random Photo Every Login
-feh --bg-fill --randomize ~/Pictures/wallpapers/tokyonight/* &
+# feh --bg-scale --randomize ~/Pictures/wallpapers/tokyonight/* &
+feh --bg-scale ~/Pictures/wallpapers/nature/antti-paakkonen-zl1vO7GXOcU-unsplash.jpg
 
 # Don't Randomly Turn off
 xset s off
