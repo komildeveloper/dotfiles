@@ -34,6 +34,10 @@ export CLICOLOR=1
 export EDITOR=vim
 export VISUAL=vim
 
+# bash completion
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # >>> conda initialize >>>
