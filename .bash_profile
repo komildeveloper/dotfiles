@@ -6,6 +6,11 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+# ~/.bash_aliases
+if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi
+
 # Change to your name, do not delete backslashes
 export LSCOLORS=cxgxfxexbxegedabagacad
 export CLICOLOR=1
