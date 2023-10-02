@@ -27,7 +27,13 @@ autoload -Uz colors && colors
 
 # Useful Functions
 source "$ZDOTDIR/zsh-functions"
+
+# Completions
 source <(kubectl completion zsh)
+source <(kubeadm completion zsh)
+source <(helm completion zsh)
+source <(skaffold completion zsh)
+source <(minikube completion zsh)
 
 # Normal files to source
 zsh_add_file "zsh-exports"
@@ -58,6 +64,14 @@ bindkey "^k" up-line-or-beginning-search # Up
 bindkey "^j" down-line-or-beginning-search # Down
 bindkey -r "^u"
 bindkey -r "^d"
+
+# GCloud
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/komil/google-cloud-sdk/path.zsh.inc' ]; then . '/home/komil/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+
+if [ -f '/home/komil/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/komil/google-cloud-sdk/completion.zsh.inc'; fi
 
 # FZF 
 # TODO update for mac
